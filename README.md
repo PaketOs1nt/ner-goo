@@ -17,6 +17,8 @@ A simple rhythm game built to learn and experiment with Godot.
 - `Left Mouse Button`
 - `Right Mouse Button`
 
+Scroll mouse to change volume
+
 <img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/b9c5e152-584f-4380-9f04-6524d466fd7a" />
 
 <img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/ca5eac74-61ad-4970-a7f1-57cfb8dc3caf" />
