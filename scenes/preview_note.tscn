@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b7nfqcjn75r46"]
+
+[ext_resource type="Script" uid="uid://ps1p8cxnl7lh" path="res://scripts/preview_note.gd" id="1_53p8d"]
+[ext_resource type="Texture2D" uid="uid://qgqwjgjx7mqf" path="res://btn_sprites/note_area.png" id="1_g555e"]
+
+[sub_resource type="Gradient" id="Gradient_g555e"]
+offsets = PackedFloat32Array(0.9039548, 1)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 0.49803922)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g3j1x"]
+gradient = SubResource("Gradient_g555e")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[node name="PreviewNote" type="Control" unique_id=1624443101]
+custom_minimum_size = Vector2(196, 196)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 196.0
+offset_bottom = 196.0
+script = ExtResource("1_53p8d")
+
+[node name="BG" type="TextureRect" parent="." unique_id=1456188851]
+layout_mode = 0
+offset_right = 196.0
+offset_bottom = 196.0
+texture = ExtResource("1_g555e")
+expand_mode = 1
+
+[node name="Note" type="TextureRect" parent="." unique_id=492279489]
+layout_mode = 0
+offset_left = -55.0
+offset_top = -55.0
+texture = SubResource("GradientTexture2D_g3j1x")
+expand_mode = 1

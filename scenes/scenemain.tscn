@@ -1,0 +1,459 @@
+[gd_scene format=3 uid="uid://buamy8avb25k3"]
+
+[ext_resource type="Script" uid="uid://ds1mmftuhchrq" path="res://scripts/scenemain.gd" id="1_p50te"]
+[ext_resource type="Script" uid="uid://yp07kyvgfg1t" path="res://scripts/color_rect.gd" id="2_11gfp"]
+[ext_resource type="Script" uid="uid://cyq44irs6rxse" path="res://scripts/start_menu.gd" id="3_fpfpa"]
+[ext_resource type="Texture2D" uid="uid://dwg5mb38wlvfh" path="res://btn_sprites/play.png" id="4_wxx8o"]
+[ext_resource type="Script" uid="uid://dv8sci1wfm8ah" path="res://scripts/play_btn.gd" id="5_tkon3"]
+[ext_resource type="Texture2D" uid="uid://b1p2qqdjy5odp" path="res://btn_sprites/exit.png" id="6_vcu7w"]
+[ext_resource type="Texture2D" uid="uid://dv1xxq8jqqdct" path="res://btn_sprites/exit_pressed.png" id="7_qpai7"]
+[ext_resource type="Script" uid="uid://ckby2vc5gwsud" path="res://scripts/exitbtn.gd" id="8_ot8kv"]
+[ext_resource type="Texture2D" uid="uid://b26aog1ndpebe" path="res://arts/girl.png" id="9_wonee"]
+[ext_resource type="Script" uid="uid://be3v76gn6rrou" path="res://scripts/girl.gd" id="10_g0dft"]
+[ext_resource type="Texture2D" uid="uid://dmukij2n582nx" path="res://btn_sprites/settings.png" id="11_5fkid"]
+[ext_resource type="Texture2D" uid="uid://cuvo8wl4jc3qv" path="res://btn_sprites/settings_pressed.png" id="12_kro7t"]
+[ext_resource type="Script" uid="uid://dw5i5605yc5ne" path="res://scripts/settings_btn.gd" id="13_gp7co"]
+[ext_resource type="Texture2D" uid="uid://bk1gwoskfqsxc" path="res://btn_sprites/newlvlA.png" id="14_jhxuw"]
+[ext_resource type="Script" uid="uid://bmhhmw06f1ml1" path="res://scripts/levels.gd" id="14_w6th7"]
+[ext_resource type="Script" uid="uid://dn4rhnx21c3ww" path="res://scripts/lvl_scroller.gd" id="15_0cxu6"]
+[ext_resource type="Texture2D" uid="uid://bey3yl5tdk3pr" path="res://btn_sprites/newlvlB.png" id="15_6n0ie"]
+[ext_resource type="Texture2D" uid="uid://du3aetkynfmw5" path="res://arts/g_head.png" id="16_21f4y"]
+[ext_resource type="Script" uid="uid://db0a5tf1icsy3" path="res://scripts/create_btn.gd" id="16_ibiin"]
+[ext_resource type="Script" uid="uid://c5e2rvdrpmmb6" path="res://scripts/g_head.gd" id="17_khfmn"]
+[ext_resource type="Texture2D" uid="uid://ds14nhw5ajqlx" path="res://arts/g_eye.png" id="18_lo2s8"]
+[ext_resource type="Script" uid="uid://ccsnbc4h0dcrs" path="res://scripts/g_eye.gd" id="19_0m7pc"]
+[ext_resource type="Texture2D" uid="uid://bp2ut7wvht0hd" path="res://arts/g_hair.png" id="20_bxloi"]
+[ext_resource type="Script" uid="uid://c4s3a1w0wxxhd" path="res://scripts/g_hair.gd" id="21_b04wn"]
+[ext_resource type="Texture2D" uid="uid://cnbwr3wvbaguw" path="res://btn_sprites/importA.png" id="22_1tlfk"]
+[ext_resource type="Texture2D" uid="uid://yg4ahwfenmwh" path="res://arts/cursor.png" id="22_aqwqr"]
+[ext_resource type="Script" uid="uid://c1ucquba30o7" path="res://scripts/game_play.gd" id="22_qpai7"]
+[ext_resource type="Texture2D" uid="uid://qgqwjgjx7mqf" path="res://btn_sprites/note_area.png" id="22_vcu7w"]
+[ext_resource type="Script" uid="uid://6emn32pwovql" path="res://scripts/cursor.gd" id="23_1tlfk"]
+[ext_resource type="Texture2D" uid="uid://duwt6ioby0ihb" path="res://btn_sprites/importB.png" id="23_agovu"]
+[ext_resource type="Script" uid="uid://dcn6mn5yghso4" path="res://scripts/import_lvl_btn.gd" id="24_1tlfk"]
+[ext_resource type="Script" uid="uid://cuvn0gm3h7jeh" path="res://scripts/settings.gd" id="24_agovu"]
+[ext_resource type="Texture2D" uid="uid://bsa5bbqfa2mpr" path="res://btn_sprites/hslider/grabber_disabled.png" id="24_fpfpa"]
+[ext_resource type="Texture2D" uid="uid://cp0ro6hoayr2s" path="res://btn_sprites/gp_cube.png" id="24_g0dft"]
+[ext_resource type="Texture2D" uid="uid://xc4cyiqy3shi" path="res://arts/gp_eyes.png" id="25_5fkid"]
+[ext_resource type="Texture2D" uid="uid://cl0k1r3xcdw8o" path="res://btn_sprites/settings_bg.png" id="25_pg1cj"]
+[ext_resource type="Texture2D" uid="uid://jefjq0mrwsdt" path="res://btn_sprites/hslider/grabber_highlight.png" id="25_wxx8o"]
+[ext_resource type="Texture2D" uid="uid://brj1ufqjekhg6" path="res://btn_sprites/checkboxA.png" id="26_jhxuw"]
+[ext_resource type="Script" uid="uid://kt5mje0tl7j2" path="res://scripts/gp_eyes.gd" id="26_kro7t"]
+[ext_resource type="Texture2D" uid="uid://cad7ajpm58cnq" path="res://btn_sprites/checkboxB.png" id="27_6n0ie"]
+[ext_resource type="Script" uid="uid://dxnhhl57hovhw" path="res://scripts/v_sync_check_box.gd" id="28_ibiin"]
+[ext_resource type="Script" uid="uid://3vhedjtk5hds" path="res://scripts/accuracy_label.gd" id="28_khfmn"]
+[ext_resource type="Texture2D" uid="uid://dw53c6irvpfrw" path="res://btn_sprites/stats_bg.png" id="29_0m7pc"]
+[ext_resource type="FontFile" uid="uid://bsc2605i5xues" path="res://PermanentMarker.ttf" id="29_7151c"]
+[ext_resource type="Script" uid="uid://dryq2phq7tajl" path="res://scripts/stats_bg.gd" id="30_bxloi"]
+[ext_resource type="Texture2D" uid="uid://bigbgdn7x6x0y" path="res://btn_sprites/savebtnA.png" id="30_fpm32"]
+[ext_resource type="Texture2D" uid="uid://xyil5sf177ac" path="res://btn_sprites/savebtnB.png" id="31_47ay2"]
+[ext_resource type="Script" uid="uid://6h04tkgageii" path="res://scripts/close_stats_btn.gd" id="32_bxloi"]
+[ext_resource type="Script" uid="uid://c6c8danv1ta6w" path="res://scripts/save_settings_btn.gd" id="32_dq164"]
+[ext_resource type="Texture2D" uid="uid://ttpw5j5u8scl" path="res://btn_sprites/hslider/slider.png" id="35_wxx8o"]
+[ext_resource type="Script" uid="uid://cw6piddr5osio" path="res://scripts/fps_slider.gd" id="36_vcu7w"]
+[ext_resource type="Texture2D" uid="uid://bdlingvcsos5t" path="res://btn_sprites/testsfx_clickA.png" id="40_w6th7"]
+[ext_resource type="Texture2D" uid="uid://cjl85cdvesifm" path="res://btn_sprites/testsfx_clickB.png" id="41_0cxu6"]
+[ext_resource type="Script" uid="uid://cjjr8qx3m4l7d" path="res://scripts/sfx_click_btn.gd" id="42_0cxu6"]
+[ext_resource type="Texture2D" uid="uid://je2kymbvtlaq" path="res://btn_sprites/testsfx_hitA.png" id="42_21f4y"]
+[ext_resource type="Texture2D" uid="uid://b1lgvv4ygwnd3" path="res://btn_sprites/testsfx_hitB.png" id="43_khfmn"]
+[ext_resource type="Script" uid="uid://2q1wq3hjtyjq" path="res://scripts/sfx_hit_btn.gd" id="45_21f4y"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_g3j1x"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tkon3"]
+load_path = "res://.godot/imported/grabber.png-920ad1fccfa55dbe4513b7d9f46ae42b.ctex"
+
+[sub_resource type="Theme" id="Theme_dga61"]
+HSlider/icons/grabber = SubResource("CompressedTexture2D_tkon3")
+HSlider/icons/grabber_disabled = ExtResource("24_fpfpa")
+HSlider/icons/grabber_highlight = ExtResource("25_wxx8o")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wxx8o"]
+texture = ExtResource("35_wxx8o")
+texture_margin_left = 50.0
+texture_margin_right = 50.0
+expand_margin_top = 15.0
+expand_margin_bottom = 15.0
+
+[node name="Main" type="Node2D" unique_id=1405394282]
+material = SubResource("CanvasItemMaterial_g3j1x")
+script = ExtResource("1_p50te")
+
+[node name="Menu" type="Control" parent="." unique_id=1661389818]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Background" type="ColorRect" parent="Menu" unique_id=911201734]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.33333334, 1)
+script = ExtResource("2_11gfp")
+
+[node name="StartMenu" type="Control" parent="Menu" unique_id=2128368293]
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("3_fpfpa")
+
+[node name="PlayBtn" type="TextureButton" parent="Menu/StartMenu" unique_id=1044694145]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 804.0
+offset_right = 788.0
+offset_bottom = 1060.0
+texture_normal = ExtResource("4_wxx8o")
+script = ExtResource("5_tkon3")
+
+[node name="ExitBtn" type="TextureButton" parent="Menu/StartMenu" unique_id=610166439]
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 256.0
+texture_normal = ExtResource("6_vcu7w")
+texture_hover = ExtResource("7_qpai7")
+stretch_mode = 1
+script = ExtResource("8_ot8kv")
+
+[node name="Girl" type="TextureRect" parent="Menu/StartMenu" unique_id=956257750]
+layout_mode = 0
+offset_left = 899.0
+offset_top = -48.0
+offset_right = 2280.894
+offset_bottom = 1278.0
+texture = ExtResource("9_wonee")
+script = ExtResource("10_g0dft")
+
+[node name="SettingsBtn" type="TextureButton" parent="Menu/StartMenu" unique_id=936121707]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 652.0
+offset_right = 235.0
+offset_bottom = 796.0
+texture_normal = ExtResource("11_5fkid")
+texture_pressed = ExtResource("12_kro7t")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("13_gp7co")
+
+[node name="CreateBtn" type="TextureButton" parent="Menu/StartMenu" unique_id=2111517270]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 652.0
+offset_right = 455.0
+offset_bottom = 796.0
+texture_normal = ExtResource("14_jhxuw")
+texture_pressed = ExtResource("15_6n0ie")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("16_ibiin")
+
+[node name="Levels" type="Control" parent="Menu" unique_id=1127854805]
+anchors_preset = 0
+offset_left = -1920.0
+offset_bottom = 1080.0
+script = ExtResource("14_w6th7")
+
+[node name="LevelsTimer" type="Timer" parent="Menu/Levels" unique_id=1054511941]
+autostart = true
+
+[node name="LvlScroller" type="ScrollContainer" parent="Menu/Levels" unique_id=1636124307]
+layout_mode = 0
+offset_left = 1077.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+scroll_horizontal_custom_step = 0.0
+horizontal_scroll_mode = 0
+script = ExtResource("15_0cxu6")
+
+[node name="LvlsContainer" type="VBoxContainer" parent="Menu/Levels/LvlScroller" unique_id=1582318273]
+layout_mode = 2
+
+[node name="GHead" type="TextureRect" parent="Menu/Levels" unique_id=674984003]
+layout_mode = 0
+offset_left = -1282.0
+offset_top = 118.0
+offset_right = 766.0
+offset_bottom = 2166.0
+texture = ExtResource("16_21f4y")
+script = ExtResource("17_khfmn")
+
+[node name="GEye" type="TextureRect" parent="Menu/Levels" unique_id=1335838949]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.35
+anchor_right = 1.35
+offset_left = -2541.0
+offset_top = 593.0
+offset_right = -2173.0
+offset_bottom = 961.0
+texture = ExtResource("18_lo2s8")
+stretch_mode = 1
+script = ExtResource("19_0m7pc")
+
+[node name="GHair" type="TextureRect" parent="Menu/Levels" unique_id=1980190975]
+layout_mode = 1
+anchors_preset = -1
+offset_left = -1282.0
+offset_top = 118.0
+offset_right = 766.0
+offset_bottom = 2166.0
+texture = ExtResource("20_bxloi")
+script = ExtResource("21_b04wn")
+
+[node name="ImportLvlBtn" type="TextureButton" parent="Menu/Levels" unique_id=1852346935]
+layout_mode = 0
+offset_left = 876.0
+offset_top = 32.0
+offset_right = 1045.0
+offset_bottom = 201.0
+texture_normal = ExtResource("22_1tlfk")
+texture_pressed = ExtResource("23_agovu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("24_1tlfk")
+
+[node name="FileDialog" type="FileDialog" parent="Menu/Levels/ImportLvlBtn" unique_id=1078421699]
+title = "Open a File"
+ok_button_text = "Import"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.zip; Zip Archive")
+use_native_dialog = true
+
+[node name="GamePlay" type="Control" parent="Menu" unique_id=1548400519]
+anchors_preset = 0
+offset_top = 1080.0
+offset_right = 1920.0
+offset_bottom = 2160.0
+script = ExtResource("22_qpai7")
+
+[node name="GPBG" type="TextureRect" parent="Menu/GamePlay" unique_id=1236008065]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 28.0
+offset_right = 1472.0
+offset_bottom = 1052.0
+texture = ExtResource("22_vcu7w")
+
+[node name="GPCube" type="TextureRect" parent="Menu/GamePlay" unique_id=257928197]
+layout_mode = 0
+offset_left = 1472.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("24_g0dft")
+
+[node name="ColorRect" type="ColorRect" parent="Menu/GamePlay/GPCube" unique_id=2142148621]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 240.0
+offset_right = 358.0
+offset_bottom = 513.0
+
+[node name="GPEyes" type="TextureRect" parent="Menu/GamePlay/GPCube" unique_id=1646105981]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("25_5fkid")
+script = ExtResource("26_kro7t")
+
+[node name="AccuracyLabel" type="Label" parent="Menu/GamePlay" unique_id=1896350524]
+layout_mode = 0
+offset_left = 1508.0
+offset_right = 1920.0
+offset_bottom = 114.0
+theme_override_colors/font_color = Color(0.0627451, 0.0627451, 0.7490196, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 101
+text = "100.00%"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("28_khfmn")
+
+[node name="StatsBG" type="TextureRect" parent="Menu/GamePlay" unique_id=1451705840]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 156.0
+offset_right = 1344.0
+offset_bottom = 924.0
+texture = ExtResource("29_0m7pc")
+script = ExtResource("30_bxloi")
+
+[node name="AccuracyLabel" type="Label" parent="Menu/GamePlay/StatsBG" unique_id=1517233054]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 85.0
+offset_right = 569.0
+offset_bottom = 165.0
+theme_override_colors/font_color = Color(0, 0, 0.11372549, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 55
+text = "ACCURACY: 100.0%"
+
+[node name="PointsLabel" type="Label" parent="Menu/GamePlay/StatsBG" unique_id=752922502]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 181.0
+offset_right = 421.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(0, 0, 0.11372549, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 55
+text = "SCORE: 1000"
+
+[node name="HitsLabel" type="Label" parent="Menu/GamePlay/StatsBG" unique_id=1767163099]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 282.0
+offset_right = 340.0
+offset_bottom = 362.0
+theme_override_colors/font_color = Color(0, 0, 0.11372549, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 55
+text = "HITS: 100"
+
+[node name="MissesLabel" type="Label" parent="Menu/GamePlay/StatsBG" unique_id=1342447807]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 374.0
+offset_right = 365.0
+offset_bottom = 454.0
+theme_override_colors/font_color = Color(1, 0, 0.18431373, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 55
+text = "MISSES: 0"
+
+[node name="MaxComboLabel" type="Label" parent="Menu/GamePlay/StatsBG" unique_id=1927159454]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 465.0
+offset_right = 560.0
+offset_bottom = 545.0
+theme_override_colors/font_color = Color(0, 0, 0.11372549, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 55
+text = "MAX COMBO: 100"
+
+[node name="CloseBtn" type="TextureButton" parent="Menu/GamePlay/StatsBG" unique_id=1385877055]
+layout_mode = 0
+offset_left = 555.0
+offset_top = 565.0
+offset_right = 683.0
+offset_bottom = 693.0
+texture_normal = ExtResource("26_jhxuw")
+script = ExtResource("32_bxloi")
+
+[node name="Label" type="Label" parent="Menu/GamePlay/StatsBG/CloseBtn" unique_id=1553872542]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 11.0
+offset_right = 83.0
+offset_bottom = 109.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0.47843137, 0.30980393, 0.30980393, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 68
+text = "X"
+
+[node name="Settings" type="Control" parent="Menu" unique_id=1967678953]
+anchors_preset = 0
+offset_top = -1080.0
+offset_right = 1920.0
+theme = SubResource("Theme_dga61")
+script = ExtResource("24_agovu")
+
+[node name="SettingsBG" type="TextureRect" parent="Menu/Settings" unique_id=1413919340]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = 1052.0
+offset_bottom = 1052.0
+texture = ExtResource("25_pg1cj")
+
+[node name="VSyncCheckBox" type="TextureButton" parent="Menu/Settings" unique_id=392596420]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 121.0
+offset_right = 246.0
+offset_bottom = 249.0
+toggle_mode = true
+texture_normal = ExtResource("26_jhxuw")
+texture_pressed = ExtResource("27_6n0ie")
+script = ExtResource("28_ibiin")
+
+[node name="VSyncLabel" type="Label" parent="Menu/Settings" unique_id=603975820]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 138.0
+offset_right = 467.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0.33333334, 0.33333334, 0.33333334, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 64
+text = "V-Sync"
+
+[node name="SaveSettingsBtn" type="TextureButton" parent="Menu/Settings" unique_id=2003431892]
+layout_mode = 0
+offset_left = 774.0
+offset_top = 849.0
+offset_right = 966.0
+offset_bottom = 977.0
+texture_normal = ExtResource("30_fpm32")
+texture_pressed = ExtResource("31_47ay2")
+script = ExtResource("32_dq164")
+
+[node name="FPSSlider" type="HSlider" parent="Menu/Settings" unique_id=842959437]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 287.0
+offset_right = 678.0
+offset_bottom = 351.0
+theme_override_styles/slider = SubResource("StyleBoxTexture_wxx8o")
+max_value = 1000.0
+script = ExtResource("36_vcu7w")
+
+[node name="FPSLabel" type="Label" parent="Menu/Settings/FPSSlider" unique_id=1614280098]
+layout_mode = 0
+offset_left = 576.0
+offset_top = -18.0
+offset_right = 863.0
+offset_bottom = 84.0
+theme_override_colors/font_color = Color(0.33333334, 0.33333334, 0.33333334, 1)
+theme_override_fonts/font = ExtResource("29_7151c")
+theme_override_font_sizes/font_size = 64
+text = "0 FPS"
+
+[node name="SFXClick" type="TextureButton" parent="Menu/Settings" unique_id=673415771]
+layout_mode = 0
+offset_left = 779.0
+offset_top = 394.0
+offset_right = 971.0
+offset_bottom = 522.0
+action_mode = 0
+texture_normal = ExtResource("40_w6th7")
+texture_pressed = ExtResource("41_0cxu6")
+script = ExtResource("42_0cxu6")
+
+[node name="SFXHit" type="TextureButton" parent="Menu/Settings" unique_id=354288222]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 541.0
+offset_right = 972.0
+offset_bottom = 669.0
+action_mode = 0
+texture_normal = ExtResource("42_21f4y")
+texture_pressed = ExtResource("43_khfmn")
+script = ExtResource("45_21f4y")
+
+[node name="Cursor" type="Sprite2D" parent="Menu" unique_id=626198646]
+z_index = 100
+position = Vector2(-75, -79)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("22_aqwqr")
+script = ExtResource("23_1tlfk")
+
+[connection signal="timeout" from="Menu/Levels/LevelsTimer" to="Menu/Levels" method="_on_levels_timeout"]

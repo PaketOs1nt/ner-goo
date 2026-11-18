@@ -1,0 +1,333 @@
+[gd_scene format=3 uid="uid://55n6ykbe1oy5"]
+
+[ext_resource type="Texture2D" uid="uid://ciic5de53s8it" path="res://btn_sprites/basesettings_bg.png" id="1_b1cmn"]
+[ext_resource type="Script" uid="uid://jihy0y1hbb1m" path="res://scripts/editorscene.gd" id="1_pxqd5"]
+[ext_resource type="FontFile" uid="uid://bsc2605i5xues" path="res://PermanentMarker.ttf" id="3_ba0ut"]
+[ext_resource type="Texture2D" uid="uid://dehfp7m143k14" path="res://btn_sprites/labeleditA.png" id="4_q68jb"]
+[ext_resource type="Texture2D" uid="uid://bf4s6d3oxooay" path="res://btn_sprites/labeleditB.png" id="5_xg7d5"]
+[ext_resource type="Texture2D" uid="uid://bobdro8r3gep8" path="res://btn_sprites/leaveditorA.png" id="6_5tm2q"]
+[ext_resource type="Script" uid="uid://80wifmrddoo5" path="res://scripts/line_edit_name.gd" id="6_6lm8n"]
+[ext_resource type="Script" uid="uid://bdye2pbg5fkpp" path="res://scripts/line_edit_bpm.gd" id="6_wyx26"]
+[ext_resource type="Texture2D" uid="uid://dbovtgagu2aci" path="res://btn_sprites/leaveditorB.png" id="7_j8y2p"]
+[ext_resource type="Script" uid="uid://c4th1sdjp3f7o" path="res://scripts/leave_editor_btn.gd" id="8_o435n"]
+[ext_resource type="Texture2D" uid="uid://dpwnqr5237p64" path="res://btn_sprites/musicbtnA.png" id="9_aa8l6"]
+[ext_resource type="Script" uid="uid://dsex87jdjq3br" path="res://scripts/note_scroller.gd" id="9_j8y2p"]
+[ext_resource type="Script" uid="uid://2haunlib63rq" path="res://scripts/level_map_editor.gd" id="9_q8l03"]
+[ext_resource type="Texture2D" uid="uid://drlnf65k5o7qy" path="res://btn_sprites/newnoteA.png" id="10_3vi5u"]
+[ext_resource type="Texture2D" uid="uid://cqqllueent2ib" path="res://btn_sprites/musicbtnB.png" id="10_k1sck"]
+[ext_resource type="Texture2D" uid="uid://b0558wdplvvcd" path="res://btn_sprites/newnoteB.png" id="11_78fwb"]
+[ext_resource type="Script" uid="uid://q21x01ixr5mx" path="res://scripts/music_button_editor.gd" id="11_k1sck"]
+[ext_resource type="Script" uid="uid://bb25shfnjnw6v" path="res://scripts/new_note_btn.gd" id="12_78fwb"]
+[ext_resource type="Texture2D" uid="uid://qgqwjgjx7mqf" path="res://btn_sprites/note_area.png" id="13_74j0u"]
+[ext_resource type="Script" uid="uid://dnocgku7q4vr5" path="res://scripts/editor_notes_control.gd" id="14_sdh1e"]
+[ext_resource type="Texture2D" uid="uid://d00juqyjsl320" path="res://btn_sprites/exportbtnA.png" id="14_v24q3"]
+[ext_resource type="Script" uid="uid://bdfsikiasn1mi" path="res://scripts/note_setings.gd" id="15_5tdu1"]
+[ext_resource type="Texture2D" uid="uid://koiebn1jxg7f" path="res://btn_sprites/exportbtnB.png" id="15_jke8t"]
+[ext_resource type="Script" uid="uid://c0i1rdm8g7i0y" path="res://scripts/selected_rect_blink.gd" id="16_0u1f5"]
+[ext_resource type="Script" uid="uid://c6uh8jlqjk76u" path="res://scripts/export_btn_editor.gd" id="16_jke8t"]
+[ext_resource type="Texture2D" uid="uid://dxo7ogd3xpgrl" path="res://btn_sprites/notesettingsBG.png" id="16_q8l03"]
+[ext_resource type="Texture2D" uid="uid://b60shv4joow1p" path="res://btn_sprites/loadbtnA.png" id="17_ndxgo"]
+[ext_resource type="Texture2D" uid="uid://q4h7rjlxkkrd" path="res://btn_sprites/loadbtnB.png" id="18_e62bx"]
+[ext_resource type="Script" uid="uid://cjpy50msd5vwx" path="res://scripts/load_map_btn.gd" id="19_65evm"]
+[ext_resource type="Texture2D" uid="uid://jiffs8w68mi3" path="res://btn_sprites/playmusA.png" id="23_7msgv"]
+[ext_resource type="Texture2D" uid="uid://d1h68n76dfumn" path="res://btn_sprites/playmusB.png" id="24_bn54a"]
+[ext_resource type="Texture2D" uid="uid://cceeko8suk7c6" path="res://btn_sprites/stopmusA.png" id="25_1abrv"]
+[ext_resource type="Script" uid="uid://4cykccolmlco" path="res://scripts/play_music_btn.gd" id="25_6lm8n"]
+[ext_resource type="Texture2D" uid="uid://dh2f7gtxa2h38" path="res://btn_sprites/stopmusB.png" id="26_6lm8n"]
+[ext_resource type="Script" uid="uid://c5ap07ckdl3no" path="res://scripts/stop_music_btn.gd" id="27_bn54a"]
+
+[sub_resource type="Gradient" id="Gradient_pxqd5"]
+colors = PackedColorArray(0.0885599, 0.0885599, 0.0885599, 1, 0.051970966, 0.05197096, 0.05197095, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g3j1x"]
+gradient = SubResource("Gradient_pxqd5")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q68jb"]
+texture = ExtResource("4_q68jb")
+texture_margin_left = 20.0
+texture_margin_top = 15.0
+texture_margin_right = 20.0
+texture_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ba0ut"]
+texture = ExtResource("5_xg7d5")
+
+[sub_resource type="Gradient" id="Gradient_q8l03"]
+offsets = PackedFloat32Array(0.49717513, 1)
+colors = PackedColorArray(0, 0, 0, 0, 1, 1, 1, 0.5294118)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_q8l03"]
+gradient = SubResource("Gradient_q8l03")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 1)
+
+[node name="Editor" type="Node2D" unique_id=293468439]
+script = ExtResource("1_pxqd5")
+
+[node name="BG" type="TextureRect" parent="." unique_id=1594985160]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = SubResource("GradientTexture2D_g3j1x")
+
+[node name="BaseSettings" type="Control" parent="." unique_id=1141950733]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 385.0
+offset_bottom = 1080.0
+
+[node name="BG" type="TextureRect" parent="BaseSettings" unique_id=1396892837]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_b1cmn")
+
+[node name="LineEditName" type="LineEdit" parent="BaseSettings" unique_id=2008303434]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 277.0
+offset_right = 370.0
+offset_bottom = 372.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0.31801936, 0.31802002, 0.31801945, 0.7294118)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0.3137255)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_constants/caret_width = 4
+theme_override_fonts/font = ExtResource("3_ba0ut")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxTexture_q68jb")
+theme_override_styles/focus = SubResource("StyleBoxTexture_ba0ut")
+placeholder_text = "level name"
+caret_blink = true
+script = ExtResource("6_6lm8n")
+
+[node name="Labellvlname" type="Label" parent="BaseSettings" unique_id=2144415529]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 228.0
+offset_right = 205.0
+offset_bottom = 275.0
+theme_override_fonts/font = ExtResource("3_ba0ut")
+theme_override_font_sizes/font_size = 32
+text = "level name:"
+
+[node name="LabelBPM" type="Label" parent="BaseSettings" unique_id=548516103]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 415.0
+offset_right = 208.0
+offset_bottom = 462.0
+theme_override_fonts/font = ExtResource("3_ba0ut")
+theme_override_font_sizes/font_size = 32
+text = "BPM:"
+
+[node name="LabelColor" type="Label" parent="BaseSettings" unique_id=1638308553]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 149.0
+offset_right = 224.0
+offset_bottom = 196.0
+theme_override_fonts/font = ExtResource("3_ba0ut")
+theme_override_font_sizes/font_size = 32
+text = "level color:"
+
+[node name="LineEditBPM" type="LineEdit" parent="BaseSettings" unique_id=665639473]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 461.0
+offset_right = 372.0
+offset_bottom = 556.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0.31801936, 0.31802002, 0.31801945, 0.7294118)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0.3137255)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_constants/caret_width = 4
+theme_override_fonts/font = ExtResource("3_ba0ut")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxTexture_q68jb")
+theme_override_styles/focus = SubResource("StyleBoxTexture_ba0ut")
+placeholder_text = "128.0"
+emoji_menu_enabled = false
+virtual_keyboard_type = 3
+caret_blink = true
+script = ExtResource("6_wyx26")
+
+[node name="LeaveBtn" type="TextureButton" parent="BaseSettings" unique_id=1384069113]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 133.6875
+offset_bottom = 99.0
+texture_normal = ExtResource("6_5tm2q")
+texture_pressed = ExtResource("7_j8y2p")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("8_o435n")
+
+[node name="ColorPicker" type="ColorPickerButton" parent="BaseSettings" unique_id=894421230]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 130.0
+offset_right = 351.0
+offset_bottom = 230.0
+
+[node name="MusicButton" type="TextureButton" parent="BaseSettings" unique_id=509911913]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 569.0
+offset_right = 372.0
+offset_bottom = 664.0
+texture_normal = ExtResource("9_aa8l6")
+texture_pressed = ExtResource("10_k1sck")
+script = ExtResource("11_k1sck")
+
+[node name="Label" type="Label" parent="BaseSettings/MusicButton" unique_id=1036264890]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 351.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ba0ut")
+theme_override_font_sizes/font_size = 24
+text = "SELECT MUSIC"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="MusicFileDialog" type="FileDialog" parent="BaseSettings/MusicButton" unique_id=1179547122]
+title = "Open a File"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.ogg; OGG Audio", "*.mp3; MP3 Audio", "*.wav; WAV Audio")
+use_native_dialog = true
+
+[node name="ExportBtn" type="TextureButton" parent="BaseSettings" unique_id=182997480]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 969.0
+offset_right = 372.0
+offset_bottom = 1064.0
+texture_normal = ExtResource("14_v24q3")
+texture_pressed = ExtResource("15_jke8t")
+script = ExtResource("16_jke8t")
+
+[node name="LoadMapBtn" type="TextureButton" parent="BaseSettings" unique_id=723525341]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 20.0
+offset_right = 367.0
+offset_bottom = 104.5
+texture_normal = ExtResource("17_ndxgo")
+texture_pressed = ExtResource("18_e62bx")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("19_65evm")
+
+[node name="FileDialog" type="FileDialog" parent="BaseSettings/LoadMapBtn" unique_id=57131976]
+title = "Open a File"
+file_mode = 0
+access = 1
+root_subfolder = "user://lvls/"
+filters = PackedStringArray("*.zip; ZIP")
+use_native_dialog = true
+
+[node name="LevelMap" type="Control" parent="." unique_id=159668617]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 385.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("9_q8l03")
+
+[node name="NoteScroller" type="ScrollContainer" parent="LevelMap" unique_id=1160713253]
+layout_mode = 0
+offset_top = 740.0
+offset_right = 1339.0
+offset_bottom = 936.0
+vertical_scroll_mode = 0
+script = ExtResource("9_j8y2p")
+
+[node name="NoteScrollContainer" type="HBoxContainer" parent="LevelMap/NoteScroller" unique_id=1178669758]
+layout_mode = 2
+
+[node name="NewNoteBtn" type="TextureButton" parent="LevelMap" unique_id=1744490010]
+layout_mode = 0
+offset_left = 1339.0
+offset_top = 740.0
+offset_right = 1535.0
+offset_bottom = 936.0
+texture_normal = ExtResource("10_3vi5u")
+texture_pressed = ExtResource("11_78fwb")
+script = ExtResource("12_78fwb")
+
+[node name="NotesBG" type="TextureRect" parent="LevelMap" unique_id=922818715]
+layout_mode = 0
+offset_left = 511.5
+offset_top = 110.0
+offset_right = 1023.5
+offset_bottom = 622.0
+texture = ExtResource("13_74j0u")
+expand_mode = 1
+
+[node name="NotesControl" type="Control" parent="LevelMap" unique_id=920041864]
+anchors_preset = 0
+offset_left = 551.0
+offset_top = 149.0
+offset_right = 985.0
+offset_bottom = 583.0
+script = ExtResource("14_sdh1e")
+
+[node name="SelectedRect" type="TextureRect" parent="LevelMap/NotesControl" unique_id=1716393664]
+z_index = 1
+layout_mode = 0
+offset_right = 144.667
+offset_bottom = 144.667
+texture = SubResource("GradientTexture2D_q8l03")
+script = ExtResource("16_0u1f5")
+
+[node name="Timer" type="Timer" parent="LevelMap/NotesControl/SelectedRect" unique_id=1505095726]
+autostart = true
+
+[node name="NoteSetings" type="Control" parent="LevelMap" unique_id=521577949]
+anchors_preset = 0
+offset_left = 1535.0
+offset_top = 110.0
+offset_right = 1791.0
+offset_bottom = 622.0
+script = ExtResource("15_5tdu1")
+
+[node name="BG" type="TextureRect" parent="LevelMap/NoteSetings" unique_id=1544232121]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("16_q8l03")
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="LevelMap/NoteSetings" unique_id=566575532]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 502.0
+offset_bottom = 502.0
+color = Color(1, 1, 1, 1)
+
+[node name="PlayMusicBtn" type="TextureButton" parent="LevelMap" unique_id=1129640564]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 471.0
+offset_right = 245.0
+offset_bottom = 599.0
+texture_normal = ExtResource("23_7msgv")
+texture_pressed = ExtResource("24_bn54a")
+script = ExtResource("25_6lm8n")
+
+[node name="StopMusicBtn" type="TextureButton" parent="LevelMap" unique_id=1594707315]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 471.0
+offset_right = 408.0
+offset_bottom = 599.0
+texture_normal = ExtResource("25_1abrv")
+texture_pressed = ExtResource("26_6lm8n")
+script = ExtResource("27_bn54a")
