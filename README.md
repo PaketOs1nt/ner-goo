@@ -3,7 +3,6 @@ A simple rhythm game built to learn and experiment with Godot.
 
 ![Godot](https://img.shields.io/badge/Godot-4.7-blue?logo=godot-engine)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-in%20development-orange)
 
 ## Features:
  - **Settings** - pick your FPS cap, toggle sound checks, turn V-Sync on/off, and save your preferences.
